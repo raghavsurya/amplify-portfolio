@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-healtheheart-dev-11323-authRole",
+            "UnauthRoleArn": "arn:aws:iam::469330506640:role/amplify-healtheheart-dev-11323-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::469330506640:role/amplify-healtheheart-dev-11323-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-healtheheart-dev-11323-deployment",
+            "UnauthRoleName": "amplify-healtheheart-dev-11323-unauthRole",
+            "StackName": "amplify-healtheheart-dev-11323",
+            "StackId": "arn:aws:cloudformation:eu-west-1:469330506640:stack/amplify-healtheheart-dev-11323/af6eb3e0-b678-11ea-ad1b-024980a27cd8",
+            "AmplifyAppId": "d22kqon0ggrr8s"
+        },
+        "categories": {
+            "auth": {
+                "healtheheartb7cc0968": {}
+            }
+        }
+    }
+}

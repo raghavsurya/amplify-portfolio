@@ -1,0 +1,28 @@
+{
+	"api": {
+		"hthapi": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "API key for HealTheHeart Apis",
+							"apiKeyExpirationDays": "30"
+						}
+					}
+				}
+			}
+		}
+	},
+	"auth": {
+		"healtheheartb7cc0968": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
