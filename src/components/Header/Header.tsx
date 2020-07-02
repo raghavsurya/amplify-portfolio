@@ -13,11 +13,14 @@ export interface Link {
 
 function Header({ links, logo }: Props) {
   return (
-    <div className="header">
-      {links.map((link) => {
-        return <span>{link.text}</span>;
-      })}
-    </div>
+    <header className="Header">
+      <nav className="Nav">
+        {links.map((link) => {
+          return <a href="/">{link.text}</a>;
+        })}
+        <button>Login</button>
+      </nav>
+    </header>
   );
 }
 

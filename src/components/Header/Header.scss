@@ -1,7 +1,16 @@
-.header {
+.Header {
+  display: grid;
+  grid-template-areas: "logo nav";
   padding: 25px;
-
   background: #1abc9c;
-  color: white;
-  font-size: 25px;
+  // color: white;
+  // font-size: 25px;
+}
+
+.Nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
 }
