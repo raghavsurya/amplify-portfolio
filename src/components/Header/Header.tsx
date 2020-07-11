@@ -15,6 +15,13 @@ function Header({ links, logo }: Props) {
   return (
 
     <nav>
+      <input type="checkbox" id="check" />
+      <label htmlFor="check" className="checkbtn">
+        <i className="fas fa-bars">
+        </i>
+      </label>
+
+
       <label className="logo"> Heal the heart</label>
       <ul>
         <li>
