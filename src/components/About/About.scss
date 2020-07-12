@@ -1,21 +1,32 @@
 .about {
-    width: 75%;
     display: flex;
-    margin: auto;
     padding: 10px;
     box-shadow: black;
     margin-top: 100px;
 }
 .about img {
-    width: 35%;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 @media(min-width: 952px) {
     
-   .about span{
-    font-size: 25px;
-   }
-    
+    .about {
+        width: 900px;
+        flex-direction: row;
+       flex-wrap: nowrap;
+       background-color: none;
+       margin-left: 10%;
+    }
+      .about img {
+        width: 300px;
+        display: block;
+        border-radius: 5%;
+    }
+    .about .content {
+        width: 1000px;
+        font-size: 23px;
+        margin-left: 5%;
+    }
+
   }
   
   @media(max-width: 858px) {
