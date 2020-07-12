@@ -6,9 +6,8 @@ import Header from "./components/Header";
 import * as serviceWorker from "./serviceWorker";
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
-import ApolloClient from "apollo-boost";
-
-const client = new ApolloClient();
+import { ApolloProvider } from '@apollo/react-hooks'
+import client from './apolloClientConfig'
 
 Amplify.configure(awsExports);
 
@@ -19,10 +18,12 @@ const links = [
 ];
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header links={links} logo="something.png" />
-    <App />
-  </React.StrictMode>,
+  <ApolloProvider client={client}>
+    <React.StrictMode>
+      <Header links={links} logo="something.png" />
+      <App />
+    </React.StrictMode>
+  </ApolloProvider>,
   document.getElementById("root")
 );
 
