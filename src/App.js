@@ -83,7 +83,7 @@ const App = () => {
   // );
 
   return (
-    <About title="Hey Anand" />
+    <About title="About Anand" />
   );
 };
 

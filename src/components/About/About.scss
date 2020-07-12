@@ -1,4 +1,34 @@
 .about {
+    width: 75%;
     display: flex;
-    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    box-shadow: black;
+    margin-top: 100px;
 }
+.about img {
+    width: 35%;
+    border-radius: 50%;
+}
+@media(min-width: 952px) {
+    
+   .about span{
+    font-size: 25px;
+   }
+    
+  }
+  
+  @media(max-width: 858px) {
+    .about {
+        width: 300px;
+        flex-direction: column;
+       flex-wrap: nowrap;
+       background-color: none;
+    }
+      .about img {
+        width: 200px;
+        display: block;
+        border-radius: 50%;
+        margin: auto;;
+    }
+  }
