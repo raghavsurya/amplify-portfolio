@@ -2,7 +2,12 @@
     display: flex;
     padding: 10px;
     box-shadow: black;
+    color:#ffffff;
     margin-top: 100px;
+    background-color: #cc338b;
+    //background: linear-gradient(to bottom, #ff99cc 0%, #cc338b 100%);
+    border-radius: 25px;
+    font-family: 'Muli', sans-serif;
 }
 .about img {
     border-radius: 5%;
@@ -10,34 +15,42 @@
 @media(min-width: 952px) {
     
     .about {
-        width: 900px;
+        width: auto;
         flex-direction: row;
        flex-wrap: nowrap;
        background-color: none;
-       margin-left: 10%;
+       margin: 3%;
     }
       .about img {
-        width: 300px;
+        width: 400px;
         display: block;
-        border-radius: 5%;
+        border-radius: 50%;
+        margin-top: 1%
     }
     .about .content {
-        width: 1000px;
-        font-size: 23px;
-        margin-left: 5%;
+     
+      padding: 35px;
+      border-radius: 30px;
+    }
+    ul {
+      margin-left: 5% 
+    }
+    ul li {
+      padding: 5px;
     }
 
   }
   
   @media(max-width: 858px) {
     .about {
-        width: 300px;
         flex-direction: column;
        flex-wrap: nowrap;
        background-color: none;
+       margin-top: 0;
     }
       .about img {
         width: 200px;
+        height: 200px;
         display: block;
         border-radius: 50%;
         margin: auto;;

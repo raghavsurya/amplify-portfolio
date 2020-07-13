@@ -22,7 +22,8 @@ function Header({ links, logo }: Props) {
       </label>
 
 
-      <label className="logo"> Heal the heart</label>
+      <label className="logo">
+      </label>
       <ul>
         <li>
           <a className="active" href="#">Home</a>

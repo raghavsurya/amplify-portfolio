@@ -15,45 +15,38 @@ const About: FunctionComponent<AboutProps> = ({ title, imageUrl, paragraph }) =>
         <div className="content">
             <h3>{title}</h3>
             <span>
-                <b>Anandh Krishna</b> is a poet, essayist, writer, novelist  and translator. <br />
+                <b>Anandh Krishna</b> is a poet, essayist, writer, novelist  and translator. He is also a practicing Consultant Psychotherapist and Counselor. He conducts Inner Healing programs based on Self-awareness. He has published four volumes of poetry in Tamil: <br />
+                <b>Avaravar Kaimanal, </b>
+                <b> Kaladiyil Agayam, </b>
+                <b>Alavilladha Malar, </b>
+                <b>Ilavarasi Kavithaikal, </b>
+           One volume of essays on poetics:
+           <b> Kavithai Ennum Vaalveechu </b>
 
-                He is also a practicing Consultant Psychotherapist and Counselor. He conducts Inner Healing programs based on Self-awareness.<br />
+            One volume of essays on Time and Consciousness:
+           <b> Kalaveli Kaadu. </b>
 
-                He has published four volumes of poetry in Tamil: <br />
-                <ul>
-                    <li><b><i>Avaravar Kaimanal </i></b></li>
-                    <li><b><i> Kaladiyil Agayam</i></b></li>
-                    <li><b><i>Alavilladha Malar</i></b></li>
-                    <li><b><i>Ilavarasi Kavithaikal</i></b></li>
-                </ul>
+            One slim novel entitled Naan Kaanaamal Pogum Kadhai, which has won wide acclaim.<br /><br />
 
-            One volume of essays on poetics:<br />
-            Kavithai Ennum Vaalveechu<br /><br />
+            He has published a volume containing three short stories and three short novels under the title <b>Pavalamalligai</b>.
 
-            One volume of essays on Time and Consciousness:<br />
-            Kalaveli Kaadu.<br />
+            He has published a long novel: <b>Sutru Vazhi Paadhai. </b>
 
-            One slim novel entitled Naan Kaanaamal Pogum Kadhai, which has won wide acclaim.<br />
+            He has translated into Tamil three books from European languages, through English:
 
-            He has published a volume containing three short stories and three short novels under the title Pavalamalligai.<br />
+            KA, by Roberto Calasso from Italian,
 
-            He has published a long novel: Sutru Vazhi Paadhai.<br />
+            The Tale of The Unknown Island by Jose Saramago,  from Portugese
 
-            He has translated into Tamil three books from European languages, through English:<br />
+            A Day with Mr. Jules by Diane Broekhoven from Belgian. <br /><br />
 
-            KA, by Roberto Calasso from Italian, <br />
+            He has been awarded the Sparrow Literary Award for 2015, for his contributions to Tamil Poetry.
 
-            The Tale of The Unknown Island by Jose Saramago,  from Portugese<br />
+            His explorations include investigations of The Collective Unconscious through his poetry, novels, short stories and essays.
 
-            A Day with Mr. Jules by Diane Broekhoven from Belgian.<br />
+            His other interests include the Psychology of the Unconscious, Transpersonal Psychology of Ken Wilber, Analytical Psychology of Carl Gustav Jung, Transactional Analysis of Eric Berne, Gestalt Therapy of Frederick Perls.
 
-            He has been awarded the Sparrow Literary Award for 2015, for his contributions to Tamil Poetry.<br />
-
-            His explorations include investigations of The Collective Unconscious through his poetry, novels, short stories and essays.<br />
-
-            His other interests include the Psychology of the Unconscious, Transpersonal Psychology of Ken Wilber, Analytical Psychology of Carl Gustav Jung, Transactional Analysis of Eric Berne, Gestalt Therapy of Frederick Perls.<br />
-
-            His engages himself deeply with Classical Music, Astrophysics, Self-Knowledge and Eastern spiritual practices.<br />
+            His engages himself deeply with Classical Music, Astrophysics, Self-Knowledge and Eastern spiritual practices.
 
 
             </span>

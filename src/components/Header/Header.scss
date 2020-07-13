@@ -36,19 +36,18 @@ nav ul li a {
   text-transform: uppercase;
   border-radius: 3px;
   border-radius: 5px;
-  border: 1px solid #FF1493;
   margin: 5px;
 
 }
 nav ul li a:hover {
   background: #FF1493;
   transition: .5s;
-  font-size: 27px;
+  font-size: 20px;
   color: #ffffff
 }
 .checkbtn {
   font-size: 30px;
-  color: #000000;
+  color: #cc338b;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -72,6 +71,10 @@ nav ul li a:hover {
 @media(max-width: 858px) {
   label.logo {
     font-size: 19px;
+  }
+  img {
+    height: 30px;
+    width: 30px;
   }
   .checkbtn {
     display: block;
