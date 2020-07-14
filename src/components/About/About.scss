@@ -6,7 +6,6 @@
     margin-top: 100px;
     background-color: #cc338b;
     //background: linear-gradient(to bottom, #ff99cc 0%, #cc338b 100%);
-    border-radius: 25px;
     font-family: 'Muli', sans-serif;
 }
 .about img {
@@ -19,6 +18,7 @@
         flex-direction: row;
        flex-wrap: nowrap;
        background-color: none;
+    border-radius: 25px;
        margin: 3%;
     }
       .about img {
