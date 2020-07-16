@@ -15,8 +15,8 @@ export const Routes = () => {
     return (
         <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/appointments" exact component={Appointments} isPrivate />
-            <Route path="/blogs" exact component={Blogs} />
+            <Route path="/appointments" component={Appointments} />
+            <Route path="/blogs" component={Blogs} />
             <Route component={Login} />
         </Switch>
     );

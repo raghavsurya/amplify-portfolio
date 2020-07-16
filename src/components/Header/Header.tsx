@@ -1,17 +1,19 @@
 import * as React from "react";
 import "./Header.scss";
+import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, history } from '../../routes';
+import appointments from '../../pages/appointments'
 
 export interface Props {
-  links: Array<Link>;
   logo: string;
 }
 
-export interface Link {
-  text: string;
-  order: number;
-}
+// export interface Link {
+//   text: string;
+//   order: number;
+// }
 
-function Header({ links, logo }: Props) {
+function Header({ logo }: Props) {
   return (
 
     <nav>
@@ -24,14 +26,17 @@ function Header({ links, logo }: Props) {
 
       <label className="logo">
       </label>
-      <ul>
-        <li>
-          <a className="active" href="#">Home</a>
-          <a href="#">About me</a>
-          <a href="#">Blogs</a>
-          <a href="#">Login</a>
-        </li>
-      </ul>
+      <Router>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+            <Link to="/appointments">Appointments</Link>
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/login">Login</Link>
+          </li>
+        </ul>
+        <Routes />
+      </Router>
     </nav>
     // <div className="topnav">
     //   {links.map((link) => {

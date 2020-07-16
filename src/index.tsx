@@ -20,7 +20,7 @@ const links = [
 ReactDOM.render(
   <ApolloProvider client={client}>
     <React.StrictMode>
-      <Header links={links} logo="something.png" />
+      <Header logo="something.png" />
       <App />
     </React.StrictMode>
   </ApolloProvider>,

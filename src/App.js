@@ -4,7 +4,7 @@ import { API, graphqlOperation, Auth } from "aws-amplify";
 import { createAppointment } from "./graphql/mutations";
 import { listAppointments } from "./graphql/queries";
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import { Routes, history } from './routes';
+
 
 
 const initialState = { datetime: "", userID: "" };
@@ -85,9 +85,9 @@ const App = () => {
   // );
 
   return (
-    <Router history={history}>
-      <Routes />
-    </Router>
+    <div>
+      App
+    </div>
   );
 };
 
