@@ -3,11 +3,9 @@ import './About.scss'
 
 type AboutProps = {
     title: string,
-    imageUrl: string,
-    paragraph: string
 }
 
-const About: FunctionComponent<AboutProps> = ({ title, imageUrl, paragraph }) =>
+const About: FunctionComponent<AboutProps> = ({ title }) =>
     <div className="about">
         <div className="logo">
             <img src={require('../../assets/anandh.jpg')} />

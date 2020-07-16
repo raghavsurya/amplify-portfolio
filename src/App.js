@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Router } from 'react-router-dom';
 import { API, graphqlOperation, Auth } from "aws-amplify";
 import { createAppointment } from "./graphql/mutations";
 import { listAppointments } from "./graphql/queries";
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import About from './components/About';
+import { Routes, history } from './routes';
+
 
 const initialState = { datetime: "", userID: "" };
 
@@ -83,7 +85,9 @@ const App = () => {
   // );
 
   return (
-    <About title="" />
+    <Router history={history}>
+      <Routes />
+    </Router>
   );
 };
 
