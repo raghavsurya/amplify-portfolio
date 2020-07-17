@@ -1,0 +1,26 @@
+.card {
+    margin: auto;
+    width: 600px;
+    box-shadow: 3px 3px 3px 3px #eee;
+    font-size: 15px;
+    margin-top: 3%;
+    padding: 0 0 1% 1%
+
+}
+.title {
+    font-size: 1.5em;
+    line-height: 3em;
+    font-weight: bolder;
+    color: #FF69B4
+}
+.subText {
+    margin-top: 5%;
+}
+
+@media(min-width: 853px) {
+    
+}
+
+@media(max-width: 852px) {
+    
+}
