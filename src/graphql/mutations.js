@@ -9,11 +9,13 @@ export const createBlog = /* GraphQL */ `
     createBlog(input: $input, condition: $condition) {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -32,11 +34,13 @@ export const updateBlog = /* GraphQL */ `
     updateBlog(input: $input, condition: $condition) {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -55,11 +59,13 @@ export const deleteBlog = /* GraphQL */ `
     deleteBlog(input: $input, condition: $condition) {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -82,7 +88,9 @@ export const createPost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -115,7 +123,9 @@ export const updatePost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -148,7 +158,9 @@ export const deletePost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -184,6 +196,8 @@ export const createComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }
@@ -214,6 +228,8 @@ export const updateComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }
@@ -244,6 +260,8 @@ export const deleteComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }

@@ -1,15 +1,18 @@
 .card {
     margin: auto;
     width: 600px;
-    box-shadow: 3px 3px 3px 3px #eee;
+    box-shadow: 5px 5px 5px 5px #eee;
     font-size: 15px;
     margin-top: 3%;
-    padding: 0 0 1% 1%
-
+    padding: 0 0 1% 1%;
+    cursor: pointer;
+}
+.card:hover{
+    transition: 0.5s
 }
 .title {
-    font-size: 1.5em;
-    line-height: 3em;
+    font-size: 2em;
+    line-height: 2em;
     font-weight: bolder;
     color: #FF69B4
 }

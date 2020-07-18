@@ -6,11 +6,13 @@ export const onCreateBlog = /* GraphQL */ `
     onCreateBlog {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -26,11 +28,13 @@ export const onUpdateBlog = /* GraphQL */ `
     onUpdateBlog {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -46,11 +50,13 @@ export const onDeleteBlog = /* GraphQL */ `
     onDeleteBlog {
       id
       name
-      posts {
+      date
+      blogText
+      comments {
         items {
           id
-          title
-          blogID
+          postID
+          content
           createdAt
           updatedAt
         }
@@ -70,7 +76,9 @@ export const onCreatePost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -100,7 +108,9 @@ export const onUpdatePost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -130,7 +140,9 @@ export const onDeletePost = /* GraphQL */ `
       blog {
         id
         name
-        posts {
+        date
+        blogText
+        comments {
           nextToken
         }
         createdAt
@@ -163,6 +175,8 @@ export const onCreateComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }
@@ -190,6 +204,8 @@ export const onUpdateComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }
@@ -217,6 +233,8 @@ export const onDeleteComment = /* GraphQL */ `
         blog {
           id
           name
+          date
+          blogText
           createdAt
           updatedAt
         }

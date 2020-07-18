@@ -1,7 +1,9 @@
 type Blog @model {
   id: ID!
   name: String!
-  posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
+  date: String!
+  blogText: String!
+  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
 }
 
 type Post @model @key(name: "byBlog", fields: ["blogID"]) {
