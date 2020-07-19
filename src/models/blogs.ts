@@ -5,7 +5,7 @@ interface Blog {
     id?: string,
     name?: string,
     date?: string,
-    blogText?: string,
+    blogText: string,
 }
 
 function mapListBlogsQuery(listBlogsQuery: any): Blog[] {

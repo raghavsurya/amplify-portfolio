@@ -5,15 +5,7 @@ import { listBlogs } from '../graphql/queries';
 import BlogCard from '../components/Card'
 import Blog, { mapListBlogs } from "../models/blogs";
 import callGraphQL from "../models/typedQueries";
-// type BlogProps = {
-//     title: string,
-//     subText: string,
-//     datePublished?: string,
-// }
-
-
-//let blogsData: any[] | import("@aws-amplify/api-graphql").GraphQLResult<object> | import("zen-observable-ts").default<object> = [];
-
+import BlogDetail from '../components/BlogDetail';
 
 function Blogs() {
     const [blogs, setBlogs] = useState<Blog[]>();
@@ -23,7 +15,6 @@ function Blogs() {
     }, []);
 
     async function fetchBlogs() {
-
         try {
             const blogData = await callGraphQL(listBlogs);
             const blogs = mapListBlogs(blogData);
@@ -34,9 +25,13 @@ function Blogs() {
         }
     }
 
+    function createMarkup(text: string) {
+        return { __html: text };
+    }
+
     return (
         <div>
-            {blogs?.map((blog) => {
+            {blogs?.map((blog: Blog) => {
                 return <BlogCard key={blog.id}>
                     <div className="title">
                         {blog.name}
@@ -44,10 +39,8 @@ function Blogs() {
                     <div className="datePublished">
                         {blog.date}
                     </div>
-                    <div className="subText">
-                        {blog.blogText}
+                    <div className="subText" dangerouslySetInnerHTML={createMarkup(blog.blogText)}>
                     </div>
-                    <h3>hahahahahahahahahahahaha heheheheheheheh</h3>
                 </BlogCard>
             })}
         </div>
