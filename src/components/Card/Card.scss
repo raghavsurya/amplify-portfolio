@@ -6,7 +6,20 @@
     margin-top: 3%;
     padding: 0 0 1% 1%;
     cursor: pointer;
+    &__long{
+        max-height: 220px;
+        min-height: 180px;
+        position: relative;
+        overflow: hidden;
+    }
+    
 }
+button { 
+    position: absolute; 
+    bottom: 0; 
+    float: right;
+    text-align: center; 
+    }
 p {
     padding: 2%;
 }
@@ -31,3 +44,4 @@ p {
 @media(max-width: 852px) {
     
 }
+

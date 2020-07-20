@@ -6,6 +6,7 @@ import BlogCard from '../components/Card'
 import Blog, { mapListBlogs } from "../models/blogs";
 import callGraphQL from "../models/typedQueries";
 import BlogDetail from '../components/BlogDetail';
+import PrimaryButton from '../components/Button/PrimaryButton'
 
 function Blogs() {
     const [blogs, setBlogs] = useState<Blog[]>();
@@ -32,7 +33,7 @@ function Blogs() {
     return (
         <div>
             {blogs?.map((blog: Blog) => {
-                return <BlogCard key={blog.id}>
+                return <BlogCard className="card__long" key={blog.id}>
                     <div className="title">
                         {blog.name}
                     </div>
@@ -41,6 +42,7 @@ function Blogs() {
                     </div>
                     <div className="subText" dangerouslySetInnerHTML={createMarkup(blog.blogText)}>
                     </div>
+                    <PrimaryButton className="btn" text="Read more" onClick={() => { }} />
                 </BlogCard>
             })}
         </div>
