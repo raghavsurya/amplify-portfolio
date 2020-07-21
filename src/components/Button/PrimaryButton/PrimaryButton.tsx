@@ -12,7 +12,7 @@ type PrimaryButtonProps = {
 export default function PrimaryButton(primaryButtonProps: PrimaryButtonProps) {
     const value = primaryButtonProps.text || primaryButtonProps.children;
     return (
-        <button className={primaryButtonProps.disable ? `disable btn ${primaryButtonProps.className}` : primaryButtonProps.className}
+        <button className={primaryButtonProps.disable ? `disable ${primaryButtonProps.className}` : primaryButtonProps.className}
             onClick={(e) => primaryButtonProps.onClick(e)}>{value}</button>
     )
 }
