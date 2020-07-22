@@ -1,5 +1,5 @@
 .card {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
     margin: auto;
     width: 80%;
     box-shadow: 5px 5px 5px 5px #eee;
@@ -13,16 +13,14 @@
         position: relative;
         overflow: hidden;
     }
+    .readMore {
+        margin: auto;
+        width: 10%;
+    }
+    
     
 }
-button { 
-    position: absolute; 
-    bottom: 0; 
-    float: right;
-    text-align: center; 
-    -webkit-mask-image: -webkit-gradient(linear, left top, 
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    }
+
 
 .card:hover{
     transition: 0.8s;
@@ -32,19 +30,20 @@ button {
     font-size: 2em;
     line-height: 2em;
     font-weight: bolder;
-    color: #FF69B4;
+    color:  #265573;
     text-align: center;
 }
 .datePublished {
     text-align: center;
+    font-size: 12px;
 }
 .subText {
-    margin-top: 5%;
     white-space: nowrap; 
     height: 70px; 
-    width: auto;
     overflow: hidden;
     text-overflow: "----"; 
+    margin: auto;
+    width: 65vw;
 }
 
 @media(min-width: 853px) {

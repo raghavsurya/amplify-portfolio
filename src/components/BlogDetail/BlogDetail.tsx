@@ -1,22 +1,31 @@
 import React, { FunctionComponent } from 'react'
+import './Blogdetail.scss';
+import PrimaryButton from '../Button/PrimaryButton';
 
 type BlogDetailProps = {
     title: string,
     datePublished: string,
-    blogText: string
+    blogText: string,
+    onClick: Function
 }
 
-const BlogDetail: FunctionComponent<BlogDetailProps> = ({ title, datePublished, blogText }) =>
+function createMarkup(text: string) {
+    return { __html: text };
+}
+
+const BlogDetail: FunctionComponent<BlogDetailProps> = (blogDetailProps: BlogDetailProps) =>
     <div className="blogDetail">
+        <PrimaryButton onClick={blogDetailProps.onClick}>
+            Back
+        </PrimaryButton>
         <div className="title">
-            {title}
+            {blogDetailProps.title}
         </div>
         <div className="datePublished">
-            {datePublished}
+            {blogDetailProps.datePublished}
         </div>
-        <div className="bodyBlog">
-            {blogText}
+        <div dangerouslySetInnerHTML={createMarkup(blogDetailProps.blogText)} className="bodyBlog">
         </div>
-    </div>
+    </div >
 
 export default BlogDetail;
