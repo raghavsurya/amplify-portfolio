@@ -12,3 +12,21 @@ p {
 .bodyBlog {
     font-size: 18pt;
 }
+@media (min-width: 853px) {
+    .title {
+        font-size: 35px;
+    }
+    .bodyBlog p {
+        padding: 20px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 852px) {
+    .title {
+        font-size: 25px;
+    }
+    .bodyBlog > p {
+        padding: 20px;
+        font-size: 20px;
+    }
+}

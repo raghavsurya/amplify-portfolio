@@ -47,7 +47,7 @@ function Blogs() {
                         <div className="datePublished">
                             {blog.date}
                         </div>
-                        <div className="subText" dangerouslySetInnerHTML={createMarkup(blog.blogText)}>
+                        <div className="card__subText" dangerouslySetInnerHTML={createMarkup(blog.blogText)}>
                         </div>
                         <div className="readMore">
                             <PrimaryButton className="btn" text="Read more" onClick={() => { setShowBlogDetail(true); setBlogDetail(blog) }} />

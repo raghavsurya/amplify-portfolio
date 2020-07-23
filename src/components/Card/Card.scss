@@ -8,8 +8,6 @@
     padding: 0 0 1% 1%;
     cursor: pointer;
     &__long{
-        max-height: 220px;
-        min-height: 180px;
         position: relative;
         overflow: hidden;
     }
@@ -17,7 +15,30 @@
         margin: auto;
         width: 10%;
     }
+    &__subText {
+        white-space: nowrap; 
+        height: 70px; 
+        overflow: hidden;
+        text-overflow: "----"; 
+        margin: auto;
+        width: 80%;
+        padding: 15px;
     
+    @media(min-width: 853px) {
+             font-size: 15px;
+             height: 120px;
+             p {
+                 padding: none;
+             }
+     }
+     
+     @media(max-width: 852px) {
+             font-size: 15px;
+             p {
+                padding: none;
+            }
+     }
+    }
     
 }
 
@@ -37,20 +58,17 @@
     text-align: center;
     font-size: 12px;
 }
-.subText {
-    white-space: nowrap; 
-    height: 70px; 
-    overflow: hidden;
-    text-overflow: "----"; 
-    margin: auto;
-    width: 65vw;
-}
+
 
 @media(min-width: 853px) {
-    
+   .blogDetail > p {
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 852px) {
-    
+    .blogDetail > p {
+        font-size: 15px;
+    }
 }
 
