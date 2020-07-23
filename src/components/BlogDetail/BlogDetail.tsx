@@ -26,6 +26,9 @@ const BlogDetail: FunctionComponent<BlogDetailProps> = (blogDetailProps: BlogDet
         </div>
         <div dangerouslySetInnerHTML={createMarkup(blogDetailProps.blogText)} className="bodyBlog">
         </div>
+        <PrimaryButton onClick={blogDetailProps.onClick}>
+            Back
+        </PrimaryButton>
     </div >
 
 export default BlogDetail;

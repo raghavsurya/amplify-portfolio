@@ -14,10 +14,11 @@ export interface Props {
 // }
 
 function Header({ logo }: Props) {
+  const [showMobileMenu, setShowMobileMenu] = React.useState<Boolean>(false);
   return (
 
     <nav>
-      <input type="checkbox" id="check" />
+      <input type="checkbox" id="check" onClick={() => setShowMobileMenu(true)} />
       <label htmlFor="check" className="checkbtn">
         <i className="fas fa-bars">
         </i>
@@ -27,8 +28,8 @@ function Header({ logo }: Props) {
       <label className="logo">
       </label>
       <Router>
-        <ul>
-          <li>
+        <ul className={showMobileMenu ? "showMenu" : ""}>
+          <li onClick={() => setShowMobileMenu(false)}>
             <Link to="/">Home</Link>
             <Link to="/appointments">Appointments</Link>
             <Link to="/blogs">Blogs</Link>
